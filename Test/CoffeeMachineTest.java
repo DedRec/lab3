@@ -3,7 +3,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-class coffeeTest {
+class CoffeeMachineTest {
     CoffeeMachine x;
     AvailableMoney k;
     Coins c;
@@ -16,10 +16,7 @@ class coffeeTest {
         }
         class coinInsert{
             int insert(int x){
-                if(x>0)
-                    return x;
-                else
-                    return 0;
+                return Math.max(x, 0);
             }
         }
         @Test
